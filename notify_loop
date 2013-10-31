@@ -14,7 +14,7 @@ echo "Watching $WATCH_PATH"
 
 while true
 do
-    notifywait "$WATCH_PATH"
+    ./notifywait "$WATCH_PATH"
     echo "Running ${COMMAND[@]}"
     "${COMMAND[@]}"
 done
